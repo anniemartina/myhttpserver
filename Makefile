@@ -1,6 +1,6 @@
 REGISTRY_HOST := ghcr.io/anniemartina
 NAME := myhttpserver/trdl
-TAG := 1
+TAG := 3
 CONTAINER_NAME := trdl
 VOL_MNTS := -v /sys/fs/cgroup:/sys/fs/cgroup -v /lib/modules:/lib/modules
 

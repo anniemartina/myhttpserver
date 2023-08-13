@@ -1,13 +1,22 @@
-from flask import Flask, render_template
+#!/usr/bin/env python3
+"""
+TRDL Flask Application
+"""
 import os
+from flask import Flask
 
 app = Flask(__name__)
 
+def app_obj():
+    """
+    Create and return Flask object
+    """
+    return app
 
-@app.route('/')
-def home():
-    return render_template('index.html')
 
+@app.route("/")
+def trdl():
+    return "42"
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 80))

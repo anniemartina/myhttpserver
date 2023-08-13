@@ -14,6 +14,7 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # configure the container to run in an executed manner
-ENTRYPOINT [ "python" ]
+#ENTRYPOINT [ "python" ]
+ENTRYPOINT ["gunicorn", "trdl:app", "--workers", "1", "--bind", "0.0.0.0:80"]
 
-CMD ["trdl.py" ]
+CMD ["--log-level", "debug"]

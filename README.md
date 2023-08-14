@@ -20,7 +20,7 @@ Clone the repository
 git clone git@github.com:anniemartina/trdl.git
 ```
 
-### Usage
+### Configuration
 
 | Command 	| Definition |
 |---------------|-------------|

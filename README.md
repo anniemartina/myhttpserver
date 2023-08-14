@@ -17,7 +17,7 @@ echo <access_token> | sudo docker login ghcr.io -u <user_name> --password-stdin
 ## Getting Started
 Clone the repository
 ```
-git clone git@github.com:anniemartina/myhttpserver.git
+git clone git@github.com:anniemartina/trdl.git
 ```
 
 ### Usage
@@ -35,8 +35,8 @@ git clone git@github.com:anniemartina/myhttpserver.git
 | `make lint`	| Run lint validation for Error on the application code |
 
 ### Useful File Locations
-* [trdl.py](https://github.com/anniemartina/myhttpserver/blob/master/trdl.py) - Flask Application
-* [test_trdl.py](https://github.com/anniemartina/myhttpserver/blob/master/test_trdl.py) - Pytest for Flask Application
+* [trdl.py](https://github.com/anniemartina/trdl/blob/master/trdl.py) - Flask Application
+* [test_trdl.py](https://github.com/anniemartina/trdl/blob/master/test_trdl.py) - Pytest for Flask Application
 
 ### Build and test Code
 

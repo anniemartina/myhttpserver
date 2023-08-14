@@ -1,9 +1,9 @@
-# Welcome to MY HTTP Server
-TRDL is a web service that returns the value based on the request input. 
+# Welcome to TRDL
+TRDL is a web service that returns the value based on the request input.
 
-### Prerequisities
+## Prerequisities
 
-In order to run this container you'll need docker installed.
+In order to run this container you'll need docker installed on Ubuntu 22.04
 
 ```
 sudo snap install docker
@@ -36,13 +36,11 @@ git clone git@github.com:anniemartina/myhttpserver.git
 
 ### Useful File Locations
 * [trdl.py](https://github.com/anniemartina/myhttpserver/blob/master/trdl.py) - Flask Application
-* [test_trdl.py]((https://github.com/anniemartina/myhttpserver/blob/master/test_trdl.py) - Pytest for Flask Application
+* [test_trdl.py](https://github.com/anniemartina/myhttpserver/blob/master/test_trdl.py) - Pytest for Flask Application
 
 ### Build and test Code
 
-1. Install python packages
-
-Install python packages from requirements.txt and dev-requirements.txt
+1. Install python packages from requirements.txt and dev-requirements.txt
 ```
 pip install -r requirements.txt -r dev-requirements.txt
 ```
@@ -59,7 +57,7 @@ make launch
 ```
 curl -v http://0.0.0.0/
 ```
-    * Sample response:
+Sample response:
 ```
 *   Trying 0.0.0.0:80...
 * Connected to 0.0.0.0 (127.0.0.1) port 80 (#0)
@@ -84,7 +82,7 @@ curl -v http://0.0.0.0/
 make push
 ```
 
-6. Remove the container for cleanup:
+6. Remove the container from dev-vm for cleanup:
 ```
 make rm
 ```

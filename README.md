@@ -22,8 +22,6 @@ git clone git@github.com:anniemartina/myhttpserver.git
 
 ### Usage
 
-####Commands and definitions to build and test the code:
-
 | Command 	| Definition |
 |---------------|-------------|
 | `make build` 	| Build the container image |
@@ -36,34 +34,32 @@ git clone git@github.com:anniemartina/myhttpserver.git
 | `make test` 	| Run unittest for flask application |
 | `make lint`	| Run lint validation for Error on the application code |
 
+### Useful File Locations
+* [trdl.py](https://github.com/anniemartina/myhttpserver/blob/master/trdl.py) - Flask Application
+* [test_trdl.py]((https://github.com/anniemartina/myhttpserver/blob/master/test_trdl.py) - Pytest for Flask Application
+
 ### Build and test Code
 
-#### Prerequisites to setup development environment
+1. Install python packages
 
 Install python packages from requirements.txt and dev-requirements.txt
 ```
 pip install -r requirements.txt -r dev-requirements.txt
 ```
-#### Files to modify for code and test improvements
 
-* `trdl.py` - Flask Application
-* `test_trdl.py` - Pytest for Flask Application
+2. Modify the Application and unittest and update the `TAG := 2` in Makefile
 
-#### Update the `TAG` in Makefile
-```
-TAG := 2
-```
-#### Build the container image and test
-* To build container image:
+3. Build the container image and test
 ```
 make build
 make launch
 ```
-* To test the basic flask functionality
+
+4. To test the basic flask functionality
 ```
 curl -v http://0.0.0.0/
 ```
-* Sample response:
+    * Sample response:
 ```
 *   Trying 0.0.0.0:80...
 * Connected to 0.0.0.0 (127.0.0.1) port 80 (#0)
@@ -82,11 +78,13 @@ curl -v http://0.0.0.0/
 <
 * Closing connection 0
 ```
-* Push the validated container image to the repository
+
+5. Push the validated container image to the repository
 ```
 make push
 ```
-* Remove the container for cleanup:
+
+6. Remove the container for cleanup:
 ```
 make rm
 ```

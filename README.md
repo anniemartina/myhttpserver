@@ -1,4 +1,4 @@
-#Welcome to MY HTTP Server
+# Welcome to MY HTTP Server
 TRDL is a web service that returns the value based on the request input. 
 
 ### Prerequisities
@@ -25,16 +25,16 @@ git clone git@github.com:anniemartina/myhttpserver.git
 ####Commands and definitions to build and test the code:
 
 | Command 	| Definition |
------------------------------
-| make build 	| Build the container image |
-| make launch	| Run the container |
-| make attach 	| Attach to the container |
-| make rm       | Remove the container |
-| make clean 	| Delete stopped containers |
-| make push 	| Push the container image to repository |
-| make pull 	| Pull the container image from repository |
-| make test 	| Run unittest for flask application |
-| make lint	| Run lint validation for Error on the application code |
+|---------------|-------------|
+| `make build` 	| Build the container image |
+| `make launch`	| Run the container |
+| `make attach`	| Attach to the container |
+| `make rm`     | Remove the container |
+| `make clean` 	| Delete stopped containers |
+| `make push` 	| Push the container image to repository |
+| `make pull` 	| Pull the container image from repository |
+| `make test` 	| Run unittest for flask application |
+| `make lint`	| Run lint validation for Error on the application code |
 
 ### Build and test Code
 

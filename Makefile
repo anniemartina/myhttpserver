@@ -21,6 +21,9 @@ pull:
 launch:
 	docker run --name $(CONTAINER_NAME) -p 80:80 -d $(REGISTRY_HOST)/$(NAME):$(TAG)
 
+attach:
+	docker exec -it $(CONTAINER_NAME) /bin/bash
+
 rm:
 	docker rm $(CONTAINER_NAME)
 

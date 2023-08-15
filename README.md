@@ -1,5 +1,7 @@
 # Welcome to TRDL
 TRDL is a web service that returns the value based on the request input.
+## Architecture
+![image](https://github.com/anniemartina/trdl/assets/137068841/6bec2bbd-611d-46fd-8221-ea78e5c8c83d)
 
 ## Prerequisities
 

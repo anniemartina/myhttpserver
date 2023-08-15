@@ -1,16 +1,16 @@
 # Welcome to TRDL
-TRDL is a web service that returns the value based on the request input.
+TRDL is a web service that returns the value based on the request input. This is a Proof-of-concept Project which will return the value 42 when a GET request is placed to the '/' path.
 ## Architecture
 ![image](https://github.com/anniemartina/trdl/assets/137068841/6bec2bbd-611d-46fd-8221-ea78e5c8c83d)
 
 ## Prerequisities
 
+#### Install tools
 In order to run this container you'll need docker installed on Ubuntu 22.04
-
 ```
 sudo snap install docker
 ```
-
+#### Login to github docker repository 
 Create access token from your account and login using the following command
 ```
 echo <access_token> | sudo docker login ghcr.io -u <user_name> --password-stdin
@@ -88,3 +88,9 @@ make push
 ```
 make rm
 ```
+
+## Build Infrastructure and EKS Cluster using Terraform
+Follow the instructions in the [README.md](https://github.com/anniemartina/terraform_eks#readme) to Build the Infrastructure and EKS Cluster using Terraform
+
+## Install trdl container on EKS Cluster using Helm
+Follow the instructions in the [README.md](https://github.com/anniemartina/terraform_eks#readme) to Install the trdl container using Helm

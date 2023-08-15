@@ -1,7 +1,7 @@
 # Welcome to TRDL
 TRDL is a web service that returns the value based on the request input. This is a Proof-of-concept Project which will return the value 42 when a GET request is placed to the '/' path.
 ## Architecture
-![image](https://github.com/anniemartina/trdl/assets/137068841/6bec2bbd-611d-46fd-8221-ea78e5c8c83d)
+![image](https://github.com/anniemartina/trdl/assets/137068841/a7549116-5f35-4c7a-a77e-59ef7a5adaba)
 
 ## Prerequisities
 
